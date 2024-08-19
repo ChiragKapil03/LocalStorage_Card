@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(46, 127, 225);
+        }
+        #container{
+            height: 450px;
+            width: 450px;
+            box-shadow: 0px 0px 100px 10px rgb(18, 28, 101);
+            border-radius: 10px;
+            border: 0;
+            background-color: rgba(143, 195, 242, 0.81);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+            gap: 28px;
+            padding: 30px;
+        }
+        #a1,#a2,#a3,#a4,#a5,#a6,#a7{
+            font-weight: 600;
+            color: rgba(9, 9, 124, 0.796);
+        }
+        .class{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>User Information Card</h1>
+        <div class="class"> <p>First Name:</p><p id="a1"> </p></div>
+        <div class="class"> <p>Last Name:</p> <p id="a2"> </p></div>
+        <div class="class"> <p>Country:</p> <p id="a3"> </p></div>
+        <div class="class"> <p>State:</p> <p id="a4"> </p></div>
+        <div class="class"> <p>City:</p> <p id="a5"> </p></div>
+        <div class="class"> <p>Village:</p> <p id="a6"> </p></div>
+        <div class="class"> <p>Phone No:</p> <p id="a7"> </p></div>    
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
