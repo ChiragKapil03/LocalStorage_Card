@@ -7,6 +7,10 @@ let Village = document.getElementById('a6')
 let PhoneNo = document.getElementById('a7')
             
 let allAns= false;
+if(localStorage.getItem("FirstName") && localStorage.getItem("LastName") && localStorage.getItem("Country") && localStorage.getItem("State") && localStorage.getItem("City") && localStorage.getItem("Village") && localStorage.getItem("Phone")){
+    updateCard();
+    allAns=true;
+}
 window.onload = function() {
     if(!allAns){
         let userResponse = prompt("What's your First name?");
@@ -50,3 +54,4 @@ function updateCard(){
     Village.textContent = `${localStorage.getItem('Village')}`;
     PhoneNo.textContent = `${localStorage.getItem('Phone')}`;
 }
+
